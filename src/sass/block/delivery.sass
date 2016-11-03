@@ -1,0 +1,48 @@
+.delivery
+  padding: 50px 0
+  background: url("/img/bg/delivery.png") center  0 no-repeat
+  &::before,
+  &::after
+    position: absolute
+    display: block
+    content: " "
+    width: 100%
+    left: 0
+    height: 7px
+  &::before
+    top: 0px
+    background: url("/img/decorations/wave-2.png")
+  &::after
+    bottom: 0
+    background: url("/img/decorations/wave-4.png")
+  &__content
+    @extend .group
+    margin-top: 40px
+  &__hero
+    @extend .group__item
+    width: 5/12 * 100%
+  &__main
+    @extend .group__item
+    width: 7/12 * 100%
+  &__img
+    display: block
+    border-radius: 50%
+    margin: 0 auto
+    max-width: 100%
+  &__item
+    margin: 10px 0
+  &__icon
+    display: inline-block
+    vertical-align: middle
+  &__text
+    color: #fff
+    font-size: 18px
+    font-weight: 400
+    margin-left: 15px
+    display: inline-block
+    vertical-align: middle
+    font-family: "RobotoCondensedRegular", sans-serif
+  &__link
+    color: #fff
+    font-weight: 400
+    text-decoration: underline

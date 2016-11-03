@@ -1,0 +1,28 @@
+.cta
+  background: url("/img/bg/cta.png") center center
+  &__inner
+    @extend .group
+  &__hero
+    @extend .group__item
+    width: 4/12 * 100%
+    text-align: right
+  &__main
+    @extend .group__item
+    width: 8/12 * 100%
+  &__title
+    margin-top: 30px
+    color: #1f656d
+    font-size: 20px
+    font-weight: bold
+    text-transform: uppercase
+    font-family: "RobotoCondensedBold", sans-serif
+  &__list
+    margin: 15px 0
+  &__item
+    color: #000
+    color: rgba(0, 0, 0, 0.85)
+    font-size: 20px
+    font-weight: 300
+    font-family: "RobotoCondensedLight", sans-serif
+    &::before
+      content: "— "

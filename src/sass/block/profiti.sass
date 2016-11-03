@@ -1,0 +1,31 @@
+.profiti
+  @extend .group
+  &_odd
+    clear: both
+  &_even
+    text-align: right
+  /* Стили для чётных элементов */
+  &_odd > &__icon
+    float: left
+  &_odd > &__main
+    padding-left: 10px
+    float: left
+  /* Стили для нечётных элементов */
+  &_even > &__icon
+    float: right
+  &_even > &__main
+    padding-right: 10px
+    float: right
+  &__title
+    color: #400808
+    font-size: 20px
+    font-weight: 600
+    text-transform: uppercase
+    font-family: "RobotoCondensedBold", sans-serif
+  &__description
+    color: #400808
+    font-size: 18px
+    font-weight: 300
+    font-family: "RobotoCondensedLight", sans-serif
+  &__icon.icon_sos
+    margin-top: 4px

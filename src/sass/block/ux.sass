@@ -1,0 +1,61 @@
+.ux
+  padding: 40px 0 320px
+  background: #69bce7 url("/img/bg/ux.jpg") center bottom no-repeat
+  &::before,
+  &::after
+    position: absolute
+    display: block
+    content: " "
+    width: 100%
+    left: 0
+    height: 7px
+  &::before
+    top: -7px
+    background: url("/img/decorations/wave-3.png")
+  &::after
+    bottom: 0
+    background: url("/img/decorations/wave-4.png")
+  &__icons
+    @extend .group
+    margin: 40px auto
+    width: 8 / 12 * 100%
+  &__icon
+    @extend .group__item
+    width: 2 / 8 * 100%
+  &__risks
+    width: 7 / 12 * 100%
+    margin-left: 5 / 12 * 100%
+    margin-top: 80px
+    padding-right: 15px
+    box-sizing: border-box
+  &__heading
+    color: #0d374d
+    font-size: 42px
+    font-weight: bold
+    text-transform: uppercase
+    font-family: "RobotoCondensedBold", sans-serif
+  &__list
+    margin-top: 20px
+  &__item
+    color: #808080
+    font-size: 24px
+    font-weight: 300
+    text-shadow: 0 0 1px rgba(255,255,255,0.8)
+    font-family: "RobotoCondensedLight", sans-serif
+  &__strong
+    color: #a66715
+    font-weight: bold
+    font-family: "RobotoCondensedBold", sans-serif
+  &__summary
+    &::before
+      content: "..."
+    &::after
+      content: "..."
+    margin-top: 80px
+    color: #fff
+    font-size: 22px
+    font-weight: 300
+    text-align: center
+    font-style: italic
+    font-family: "OpenSansLight", sans-serif
+    text-shadow: 0 0 1px rgba(0,0,0,0.2)

@@ -1,0 +1,35 @@
+.header
+  background: #36bccb
+  z-index: 2
+  &::after
+    position: absolute
+    display: block
+    content: " "
+    width: 100%
+    left: 0
+    bottom: -7px
+    height: 7px
+    background: url("/img/decorations/wave-1.png") repeat-x
+  &__logo
+    @extend .group__item
+    width: 4 / 12 * 100%
+  &__description
+    @extend .header__logo
+    margin-top: 6px
+    color: #fff
+    text-align: center
+    color: rgba(255,255,255,0.95)
+    font-size: 18px
+    font-weight: 300
+    font-family: "RobotoCondensedLight", sans-serif
+  &__contact
+    @extend .header__logo
+    text-align: right
+  &__phone
+    color: #fff
+    color: rgba(255,255,255,0.95)
+    font-size: 20px
+    font-weight: 300
+    font-family: "RobotoCondensedLight", sans-serif
+  &__call
+    margin-top: 5px
